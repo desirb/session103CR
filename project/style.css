@@ -205,7 +205,9 @@ footer nav a{
     text-decoration: none;
     margin-right: 2rem;
     font-size: 1.6rem;
-    margin-top: 1rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 1rem;
 }
 
 @media(min-width:768px){
@@ -221,7 +223,8 @@ footer nav a{
     background-image: url(img/encuentra.jpg);
     background-position: center;
     background-size: cover;
-    height: 30rem;
+    height: 39rem;
+    margin-bottom: 2rem;
 }
 
 .contact-text{
@@ -254,9 +257,23 @@ a.btn{
 
 /* blog page */
 .assets{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    
+}
+
+@media(min-width: 768px){
+    .assets{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 2rem;
+        justify-content: space-evenly;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }
 
 /* about */
@@ -274,6 +291,11 @@ a.btn{
     margin-bottom: auto;
 }
 
+.about-main img{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 /* .about-main{
     display: flex;
     flex-direction: row;
@@ -283,3 +305,15 @@ a.btn{
 .about-sec{
     flex-basis: calc(50% - 5rem);
 } */
+
+@media(min-width:768px){
+    .contact-section p{
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.contact-section p{
+    padding: 1.2rem;
+}
